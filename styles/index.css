@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+body {
+    background-color: #111;
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+}
+
+main {
+    height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    overflow: auto;
+}
+
+main div.wrapper {
+    width: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 20px;
+    overflow: auto;
+}
+
+.wrapper .text h1 {
+    color: #fff;
+    display: inline-block;
+    font-weight: 600;
+    left: 0%;
+    position: relative;
+    margin: 0;
+}
+
+.wrapper .text span a {
+    color: hsl(0, 100%, 50%);
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+.wrapper .text span a:hover {
+    color: #fff;
+    margin-left: 1.5rem;
+}
+
+.wrapper .text p {
+    margin: 0;
+    color: #666;
+}
+
+.contact-page > .back, .contact-page > .main-wrapper {
+    margin: 1rem;
+    position: relative;
+    display: flex;
+}
+
+.contact-page > .back {
+    border-bottom: 1px solid #555;
+    flex-flow: row nowrap;
+    align-items: center;
+    padding: 1rem 2rem 2rem 0;
+    justify-content: flex-start;
+}
+
+.contact-page > .back::before {
+    content: "";
+    z-index: -1;
+    border-bottom: 1px solid #777;
+    top: 3px;
+    right: 0;
+    bottom: 3px;
+    left: 0;
+    position: absolute;
+}
+
+.contact-page > .back .back-link-wrapper {
+    padding: 0.65rem 1rem;
+    border-radius: 6px;
+    background-color: rgb(61, 61, 255);
+    transition-duration: 0.4s;
+    margin-left: 1rem;
+}
+
+.contact-page > .back a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact-page > .back .back-link-wrapper:hover {
+    box-shadow: rgba(28, 28, 255, 0.582) 0px 4px 12px;
+    margin-left: 0;
+}
+
+.contact-page > .back h1 {
+    margin: 0 0 0 2rem;
+}
+
+.contact-page > .main-wrapper {
+    flex-flow: row wrap;
+    justify-content:space-around;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 30px;
+    padding: 1rem;
+    max-width: 1024px;
+    margin: auto;
+}
+
+.contact-page > .main-wrapper .break {
+    flex-basis: 100%;
+}
+
+.contact-page > .main-wrapper .card {
+    /* flex-basis: calc(calc(50% - 30px) - 6rem); */
+    /* flex: 1 1 0px; */
+    background-color: #070707;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    padding: 1rem 3rem;
+    border-radius: 8px;
+    color: #bbb;
+    margin: 0 auto;
+}
+
+.contact-page > .main-wrapper .card .title {
+    margin: 0;
+    text-align: center;
+    color: #fff;
+    font-size: 1.75rem;
+    border-bottom: 1px solid #666;
+    padding-bottom: 0.5rem;
+}
+
+.contact-page > .main-wrapper .card a {
+    text-decoration: none;
+    color: #fff;
+    transition-duration: 0.5s;
+}
+
+.contact-page > .main-wrapper .card a:hover {
+    color:hsl(0, 100%, 50%);
+}
+
+.contact-page > .main-wrapper .card .highlight {
+    text-align: center;
+    padding: 1rem;
+    background-color:rgba(61, 61, 255, 0.603);
+    color: #fff;
+    border-radius: 2px;
+    display: block;
+    margin: 1rem auto;
+    transition-duration: 0.5s;
+    width: calc(100% - 2rem);
+}
+
+.contact-page > .main-wrapper .card a.highlight:hover {
+    color: #fff;
+    border-radius: 25px;
+    /* width: 50%; */
+    background-color: rgb(61, 61, 255);
+}
+
+.contact-page > .main-wrapper .card i {
+    margin-right: 0.5rem;
+}
+
+.contact-page > .main-wrapper .keybase-wrapper, .contact-page > .main-wrapper .email-wrapper {
+    flex: 1 1 0px;
+}
+
+@media only screen and (min-width:650px) {
+    .contact-page > .main-wrapper .socials-wrapper.card {
+        flex-basis: calc(calc(50% - 30px) - 6rem);
+    }
+}
+
+@media only screen and (max-width:651px){
+    .contact-page > .main-wrapper .socials-wrapper.card {
+        flex: 1 1 0px;
+    }
+}
